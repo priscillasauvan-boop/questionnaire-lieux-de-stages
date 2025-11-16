@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Questionnaire Lieux de Stages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">💜 Questionnaire d'Amélioration</h1>
+            <p class="subtitle">🎯 Lieux de Stages - Aide-nous à progresser !</p>
+        </header>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>📋 Partage ton expérience</h2>
+                <p>Tes retours sont précieux pour améliorer les stages de tous ! ✨</p>
+            </div>
+
+            <form id="questionnaireForm" class="form">
+                <div class="form-group">
+                    <label for="ville">🏙️ Ville</label>
+                    <input type="text" id="ville" name="ville" placeholder="Ex: Marseille, Paris..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="etablissement">🏥 Établissement</label>
+                    <input type="text" id="etablissement" name="etablissement" placeholder="Ex: CHU, Clinique..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalite">🎮 Modalité</label>
+                    <select id="modalite" name="modalite" required>
+                        <option value="">Choisis la modalité...</option>
+                        <option value="IRM">🧲 IRM</option>
+                        <option value="Échographie">🔊 Échographie</option>
+                        <option value="Scanner">💫 Scanner</option>
+                        <option value="Conventionnelle">📸 Conventionnelle</option>
+                        <option value="Radiothérapie">⚡ Radiothérapie</option>
+                        <option value="Autre">🔧 Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="aspect_moins_clair">🤔 Aspect le moins clair</label>
+                    <select id="aspect_moins_clair" name="aspect_moins_clair" required>
+                        <option value="">Qu'est-ce qui pourrait être amélioré ?</option>
+                        <option value="Accueil">👋 Accueil</option>
+                        <option value="Missions">📋 Missions</option>
+                        <option value="Communication">💬 Communication</option>
+                        <option value="Suivi">📊 Suivi</option>
+                        <option value="Autre">🔍 Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestion">💡 Suggestion concrète</label>
+                    <textarea id="suggestion" name="suggestion" rows="4" placeholder="Comment pourrait-on améliorer cet aspect ? Sois constructif !" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="point_positif">🌟 Point positif à conserver</label>
+                    <textarea id="point_positif" name="point_positif" rows="4" placeholder="Qu'est-ce qui fonctionne bien ? Qu'est-ce qui t'a plu ?" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">🚀 Envoyer mon retour</span>
+                    <span class="btn-glow"></span>
+                </button>
+            </form>
+
+            <div id="successMessage" class="success-message" style="display: none;">
+                <div class="success-content">
+                    <h3>✅ Merci pour ton retour !</h3>
+                    <p>🎉 Ta contribution va aider à améliorer les stages pour tout le monde !</p>
+                    <p>💜 Tes réponses sont anonymes et seront regroupées par modalité.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>🔒 Réponses anonymes • 📊 Synthèses par modalité • 💗 Thème rose gaming</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
