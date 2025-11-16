@@ -34,14 +34,13 @@
 
                 <div class="form-group">
                     <label for="etablissement">🏥 Établissement</label>
-                    <select id="etablissement" name="etablissement" required>
-                        <option value="">Choisis l'établissement...</option>
-                        <option value="Timone">Timone</option>
-                        <option value="Conception">Conception</option>
-                        <option value="HP Bastia">HP Bastia</option>
-                        <option value="Clinique Axium">Clinique Axium</option>
-                        <option value="Autre">Autre</option>
-                    </select>
+                    <input 
+                        type="text" 
+                        id="etablissement" 
+                        name="etablissement" 
+                        placeholder="Écris l'établissement..."
+                        required
+                    />
                 </div>
 
                 <div class="form-group">
@@ -58,132 +57,85 @@
                     </select>
                 </div>
 
-                <div class="questions-table">
-                    <div class="question-row">
-                        <div class="question-text">As-tu été bien accueilli et intégré ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q1" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q1" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q1">As-tu été bien accueilli et intégré ?</label>
+                    <select id="q1" name="q1" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
 
-                    <div class="question-row">
-                        <div class="question-text">Ton tuteur s'est-il adapté à tes besoins ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q2" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q2" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q2">Ton tuteur s'est-il adapté à tes besoins ?</label>
+                    <select id="q2" name="q2" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
 
-                    <div class="question-row">
-                        <div class="question-text">As-tu eu un tuteur attitré comme repère ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q3" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q3" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q3">As-tu eu un tuteur attitré comme repère ?</label>
+                    <select id="q3" name="q3" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
 
-                    <div class="question-row">
-                        <div class="question-text">Y avait-il un changement fréquent de tuteur t'ayant freiné dans ton apprentissage ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q4" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q4" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q4">Y avait-il un changement fréquent de tuteur t'ayant freiné dans ton apprentissage ?</label>
+                    <select id="q4" name="q4" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
 
-                    <div class="question-row">
-                        <div class="question-text">Les missions confiées étaient-elles claires et adaptées ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q5" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q5" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q5">Les missions confiées étaient-elles claires et adaptées ?</label>
+                    <select id="q5" name="q5" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
 
-                    <div class="question-row">
-                        <div class="question-text">La communication dans l'équipe était-elle fluide ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q6" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q6" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q6">La communication dans l'équipe était-elle fluide ?</label>
+                    <select id="q6" name="q6" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
 
-                    <div class="question-row">
-                        <div class="question-text">As-tu reçu un suivi et des retours réguliers ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q7" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q7" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q7">As-tu reçu un suivi et des retours réguliers ?</label>
+                    <select id="q7" name="q7" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
 
-                    <div class="question-row">
-                        <div class="question-text">T'es-tu senti reconnu dans ton travail, ton statut de stagiaire ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q8" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q8" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q8">T'es-tu senti reconnu dans ton travail, ton statut de stagiaire ?</label>
+                    <select id="q8" name="q8" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
 
-                    <div class="question-row">
-                        <div class="question-text">Autre aspect à préciser ?</div>
-                        <div class="question-buttons">
-                            <label class="radio-btn radio-yes">
-                                <input type="radio" name="q9" value="Oui" required>
-                                <span class="radio-mark">✅ Oui</span>
-                            </label>
-                            <label class="radio-btn radio-no">
-                                <input type="radio" name="q9" value="Non" required>
-                                <span class="radio-mark">❌ Non</span>
-                            </label>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="q9">Autre aspect à préciser ?</label>
+                    <select id="q9" name="q9" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
