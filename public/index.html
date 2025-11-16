@@ -10,7 +10,7 @@
     <div class="stars"></div>
     <div class="container">
         <header class="header">
-            <h1 class="title">💜 Questionnaire d'Amélioration</h1>
+            <h1 class="title">Questionnaire d'Amélioration</h1>
             <p class="subtitle">🎯 Lieux de Stages - Aide-nous à progresser !</p>
         </header>
 
@@ -23,47 +23,142 @@
             <form id="questionnaireForm" class="form">
                 <div class="form-group">
                     <label for="ville">🏙️ Ville</label>
-                    <input type="text" id="ville" name="ville" placeholder="Ex: Marseille, Paris..." required>
-                </div>
-
-                <div class="form-group">
-                    <label for="etablissement">🏥 Établissement</label>
-                    <input type="text" id="etablissement" name="etablissement" placeholder="Ex: CHU, Clinique..." required>
-                </div>
-
-                <div class="form-group">
-                    <label for="modalite">🎮 Modalité</label>
-                    <select id="modalite" name="modalite" required>
-                        <option value="">Choisis la modalité...</option>
-                        <option value="IRM">🧲 IRM</option>
-                        <option value="Échographie">🔊 Échographie</option>
-                        <option value="Scanner">💫 Scanner</option>
-                        <option value="Conventionnelle">📸 Conventionnelle</option>
-                        <option value="Radiothérapie">⚡ Radiothérapie</option>
-                        <option value="Autre">🔧 Autre</option>
+                    <select id="ville" name="ville" required>
+                        <option value="">Choisis ta ville...</option>
+                        <option value="Marseille">Marseille</option>
+                        <option value="Bastia">Bastia</option>
+                        <option value="Aix-en-Provence">Aix-en-Provence</option>
+                        <option value="Autre">Autre</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="aspect_moins_clair">🤔 Aspect le moins clair</label>
-                    <select id="aspect_moins_clair" name="aspect_moins_clair" required>
-                        <option value="">Qu'est-ce qui pourrait être amélioré ?</option>
-                        <option value="Accueil">👋 Accueil</option>
-                        <option value="Missions">📋 Missions</option>
-                        <option value="Communication">💬 Communication</option>
-                        <option value="Suivi">📊 Suivi</option>
-                        <option value="Autre">🔍 Autre</option>
+                    <label for="etablissement">🏥 Établissement</label>
+                    <select id="etablissement" name="etablissement" required>
+                        <option value="">Choisis l'établissement...</option>
+                        <option value="Timone">Timone</option>
+                        <option value="Conception">Conception</option>
+                        <option value="HP Bastia">HP Bastia</option>
+                        <option value="Clinique Axium">Clinique Axium</option>
+                        <option value="Autre">Autre</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="modalite">🩻☢️💥 Modalité</label>
+                    <select id="modalite" name="modalite" required>
+                        <option value="">Choisis la modalité...</option>
+                        <option value="Médecine Nucléaire">☢️ Médecine Nucléaire</option>
+                        <option value="Radiothérapie">💥 Radiothérapie</option>
+                        <option value="Scanner">🌀 Scanner</option>
+                        <option value="Échographie">🦇 Échographie</option>
+                        <option value="IRM">🧲 IRM</option>
+                        <option value="Interventionnelle">🫀 Interventionnelle</option>
+                        <option value="Coronarographie">❤️ Coronarographie</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>As-tu été bien accueilli et intégré ?</label>
+                    <select id="q1" name="q1" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Ton tuteur s'est-il adapté à tes besoins ?</label>
+                    <select id="q2" name="q2" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>As-tu eu un tuteur attitré comme repère ?</label>
+                    <select id="q3" name="q3" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Y avait-il un changement fréquent de tuteur t'ayant freiné dans ton apprentissage ?</label>
+                    <select id="q4" name="q4" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Les missions confiées étaient-elles claires et adaptées ?</label>
+                    <select id="q5" name="q5" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>La communication dans l'équipe était-elle fluide ?</label>
+                    <select id="q6" name="q6" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>As-tu reçu un suivi et des retours réguliers ?</label>
+                    <select id="q7" name="q7" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>T'es-tu senti reconnu dans ton travail, ton statut de stagiaire ?</label>
+                    <select id="q8" name="q8" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Autre aspect à préciser ?</label>
+                    <select id="q9" name="q9" required>
+                        <option value="">Choisis...</option>
+                        <option value="Oui">Oui</option>
+                        <option value="Non">Non</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="suggestion">💡 Suggestion concrète</label>
-                    <textarea id="suggestion" name="suggestion" rows="4" placeholder="Comment pourrait-on améliorer cet aspect ? Sois constructif !" required></textarea>
+                    <textarea 
+                        id="suggestion" 
+                        name="suggestion" 
+                        rows="4" 
+                        placeholder="Comment pourrait-on améliorer cet aspect ? Sois constructif !"
+                        required
+                    ></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="point_positif">🌟 Point positif à conserver</label>
-                    <textarea id="point_positif" name="point_positif" rows="4" placeholder="Qu'est-ce qui fonctionne bien ? Qu'est-ce qui t'a plu ?" required></textarea>
+                    <textarea 
+                        id="point_positif" 
+                        name="point_positif" 
+                        rows="4" 
+                        placeholder="Qu'est-ce qui fonctionne bien ? Qu'est-ce qui t'a plu ?"
+                        required
+                    ></textarea>
                 </div>
 
                 <button type="submit" class="submit-btn">
@@ -82,7 +177,7 @@
         </div>
 
         <footer class="footer">
-            <p>🔒 Réponses anonymes • 📊 Synthèses par modalité • 💗 Thème rose gaming</p>
+            <p>🔒 Réponses anonymes • 📊 Synthèses par modalité</p>
         </footer>
     </div>
 
