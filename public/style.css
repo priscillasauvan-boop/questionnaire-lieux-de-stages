@@ -172,6 +172,103 @@ body {
     min-height: 100px;
 }
 
+.question-group {
+    margin-bottom: 30px;
+}
+
+.question-label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0284c7;
+    margin-bottom: 15px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-choice {
+    flex: 1;
+    max-width: 200px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn-choice input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.btn-choice span {
+    display: block;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-yes span {
+    background: linear-gradient(135deg, #bfdbfe, #93c5fd);
+    color: #1e40af;
+    border-color: #60a5fa;
+}
+
+.btn-no span {
+    background: linear-gradient(135deg, #e0e7ff, #c7d2fe);
+    color: #3730a3;
+    border-color: #a5b4fc;
+}
+
+.btn-choice input[type="radio"]:checked + span {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-yes input[type="radio"]:checked + span {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: #fff;
+    border-color: #2563eb;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+}
+
+.btn-no input[type="radio"]:checked + span {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: #fff;
+    border-color: #4f46e5;
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5);
+}
+
+.btn-choice:hover span {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-choice {
+        max-width: 100%;
+    }
+    
+    .btn-choice span {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
 .submit-btn {
     width: 100%;
     padding: 15px;
