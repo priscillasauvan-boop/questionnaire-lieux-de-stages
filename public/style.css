@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0ea5e9 100%);
     min-height: 100vh;
     padding: 20px;
     position: relative;
@@ -64,21 +64,21 @@ body {
     font-size: 2.5rem;
     color: #fff;
     text-shadow: 
-        0 0 10px rgba(255, 20, 147, 0.8),
-        0 0 20px rgba(138, 43, 226, 0.6),
-        0 0 30px rgba(138, 43, 226, 0.4);
+        0 0 10px rgba(6, 182, 212, 0.8),
+        0 0 20px rgba(14, 165, 233, 0.6),
+        0 0 30px rgba(14, 165, 233, 0.4);
     margin-bottom: 10px;
     animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
-    from { text-shadow: 0 0 10px rgba(255, 20, 147, 0.8), 0 0 20px rgba(138, 43, 226, 0.6); }
-    to { text-shadow: 0 0 20px rgba(255, 20, 147, 1), 0 0 30px rgba(138, 43, 226, 0.8), 0 0 40px rgba(138, 43, 226, 0.6); }
+    from { text-shadow: 0 0 10px rgba(6, 182, 212, 0.8), 0 0 20px rgba(14, 165, 233, 0.6); }
+    to { text-shadow: 0 0 20px rgba(6, 182, 212, 1), 0 0 30px rgba(14, 165, 233, 0.8), 0 0 40px rgba(14, 165, 233, 0.6); }
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: #f0e6ff;
+    color: #bfdbfe;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -88,9 +88,9 @@ body {
     padding: 30px;
     box-shadow: 
         0 20px 60px rgba(0, 0, 0, 0.3),
-        0 0 40px rgba(138, 43, 226, 0.2);
+        0 0 40px rgba(14, 165, 233, 0.2);
     animation: fadeInUp 0.8s ease;
-    border: 2px solid rgba(255, 20, 147, 0.3);
+    border: 2px solid rgba(6, 182, 212, 0.3);
 }
 
 @keyframes fadeInUp {
@@ -109,12 +109,12 @@ body {
     margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 3px solid transparent;
-    border-image: linear-gradient(90deg, #FF1493, #8B00FF, #FF1493);
+    border-image: linear-gradient(90deg, #06b6d4, #0ea5e9, #06b6d4);
     border-image-slice: 1;
 }
 
 .card-header h2 {
-    color: #8B00FF;
+    color: #0ea5e9;
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
@@ -132,39 +132,36 @@ body {
     display: block;
     font-size: 1.1rem;
     font-weight: 600;
-    color: #8B00FF;
+    color: #0284c7;
     margin-bottom: 8px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
     padding: 12px 15px;
     font-size: 1rem;
-    border: 2px solid #e0d4ff;
+    border: 2px solid #bfdbfe;
     border-radius: 10px;
     background: #fff;
     transition: all 0.3s ease;
     font-family: inherit;
 }
 
-.form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #FF1493;
+    border-color: #06b6d4;
     box-shadow: 
-        0 0 0 3px rgba(255, 20, 147, 0.1),
-        0 0 15px rgba(255, 20, 147, 0.3);
+        0 0 0 3px rgba(6, 182, 212, 0.1),
+        0 0 15px rgba(6, 182, 212, 0.3);
     transform: scale(1.02);
 }
 
-.form-group input:hover,
 .form-group select:hover,
 .form-group textarea:hover {
-    border-color: #c77dff;
+    border-color: #7dd3fc;
 }
 
 .form-group textarea {
@@ -178,19 +175,19 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(135deg, #FF1493, #8B00FF);
+    background: linear-gradient(135deg, #06b6d4, #0ea5e9);
     border: none;
     border-radius: 15px;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 25px rgba(255, 20, 147, 0.3);
+    box-shadow: 0 10px 25px rgba(6, 182, 212, 0.3);
 }
 
 .submit-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 35px rgba(255, 20, 147, 0.5);
+    box-shadow: 0 15px 35px rgba(6, 182, 212, 0.5);
 }
 
 .submit-btn:active {
@@ -231,7 +228,7 @@ body {
 
 .success-content h3 {
     font-size: 2rem;
-    color: #8B00FF;
+    color: #0ea5e9;
     margin-bottom: 15px;
 }
 
