@@ -36,8 +36,8 @@ async function initDatabase() {
         q7_suivi_retours VARCHAR(10),
         q8_reconnaissance VARCHAR(10),
         q9_autre_aspect VARCHAR(10),
-        suggestion TEXT NOT NULL,
-        point_positif TEXT NOT NULL,
+        suggestion TEXT,
+        point_positif TEXT,
         date_soumission TIMESTAMP DEFAULT NOW(),
         publie_dans_synthese BOOLEAN DEFAULT FALSE
       )
@@ -95,10 +95,10 @@ app.post('/api/submit', async (req, res) => {
       suggestion, point_positif 
     } = req.body;
 
-    if (!ville || !etablissement || !modalite || !suggestion || !point_positif ||
+    if (!ville || !etablissement || !modalite ||
         !q1_accueil || !q2_adaptation_tuteur || !q3_tuteur_attitré || !q4_changement_tuteur ||
-        !q5_missions_claires || !q6_communication || !q7_suivi_retours || !q8_reconnaissance || !q9_autre_aspect) {
-      return res.status(400).json({ error: 'Tous les champs sont requis' });
+        !q5_missions_claires || !q6_communication || !q7_suivi_retours || !q8_reconnaissance) {
+      return res.status(400).json({ error: 'Tous les champs obligatoires sont requis' });
     }
 
     const client = await pool.connect();
@@ -113,7 +113,7 @@ app.post('/api/submit', async (req, res) => {
       `, [ville, etablissement, modalite, 
           q1_accueil, q2_adaptation_tuteur, q3_tuteur_attitré, q4_changement_tuteur,
           q5_missions_claires, q6_communication, q7_suivi_retours, q8_reconnaissance, q9_autre_aspect,
-          suggestion, point_positif]);
+          suggestion || '', point_positif || '']);
 
       console.log(`✅ Nouvelle réponse enregistrée: ${modalite} - ${ville}`);
       res.json({ success: true, message: 'Réponse enregistrée avec succès' });
